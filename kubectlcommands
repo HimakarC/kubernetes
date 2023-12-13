@@ -1,0 +1,14 @@
+<h3> # CRUD COMMANDS: <h3>
+
+--> kubectl create deployment [name] <br>
+<u>ex:<u> kubectl create deployment nginx --image=nginx <br>
+--> kubectl edit deployment [name] <br>
+--> kubectl delete deployment [name] <br>
+<br>
+<h3> # Status of Components: <br><h3>
+<br>
+--> kubectl get nodes <br>
+--> kubectl get pod <br>
+--> kubectl get services <br>
+--> kubectl get replicaset <br>
+--> kubectl get deployment <br>
