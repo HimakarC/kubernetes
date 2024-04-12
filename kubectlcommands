@@ -4,6 +4,9 @@
 <u>ex:<u> kubectl create deployment nginx --image=nginx <br>
 --> kubectl edit deployment [name] <br>
 --> kubectl delete deployment [name] <br>
+--> kubectl run himakar --image=himakarc/ok:latest --port=80 #runs the image which is present in dockerhub
+--> kubectl expose pod himakar --name=himakarservice --port=80 #exposes the pod at respective port
+
 
 # Status of Components: <br>
 
