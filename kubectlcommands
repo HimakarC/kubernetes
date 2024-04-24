@@ -1,12 +1,12 @@
 # CRUD COMMANDS:
 
 --> kubectl create deployment [name] <br>
-<u>ex:<u> kubectl create deployment nginx --image=nginx <br>
+Ex: kubectl create deployment nginx --image=nginx
 --> kubectl edit deployment [name] <br>
 --> kubectl delete deployment [name] <br>
 --> kubectl run himakar --image=himakarc/ok:latest --port=80 #runs the image which is present in dockerhub
 --> kubectl expose pod himakar --name=himakarservice --port=80 #exposes the pod at respective port
-
+--> kubectl port-forward svc/service_name port:port --address 0.0.0.0 #Exposes the application to public address of EC2 instance
 
 # Status of Components: <br>
 
