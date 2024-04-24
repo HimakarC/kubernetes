@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: hima-dep
+
+  labels:
+    app: hima
+
+spec:
+
+  replicas: 1
+
+  selector:
+
+    matchLabels:
+
+      app: hima
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: hima
+
+    spec:
+
+      containers:
+
+      - name: hima
+
+        image: himakarc/hima
+
+        ports:
+
+        - containerPort: 8000
