@@ -7,6 +7,7 @@ Ex: kubectl create deployment nginx --image=nginx
 --> kubectl run himakar --image=himakarc/ok:latest --port=80 #runs the image which is present in dockerhub
 --> kubectl expose pod himakar --name=himakarservice --port=80 #exposes the pod at respective port
 --> kubectl port-forward svc/service_name port:port --address 0.0.0.0 #Exposes the application to public address of EC2 instance
+--> nohup kubectl port-forward svc/himakarservice 8000:8000 --address 0.0.0.0 > portforward.log 2>&1 & #Runs the pod in background without killing the terminal session
 
 # Status of Components: <br>
 
