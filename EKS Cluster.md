@@ -1,5 +1,5 @@
 ## To Create a cluster using eksctl <br>
---> eksctl create cluster --name=<your-cluster-name> --region=<your-region> --version=<kubernetes-version> <br>
+--> eksctl create cluster --name=<your-cluster-name> --region=<your-region> <br>
 
 ### To Implement a LoadBalancer Service in Kubernetes on a cloud platform like AWS, you need to ensure your cluster is configured to integrate with the cloud provider’s native load balancer. <br>
 ### To use Amazon EKS Cluster <br>
