@@ -1,8 +1,6 @@
 eksctl create cluster \
   --name demo-cluster \
-  --region ap-south-1 \
-  --nodes 2 \
-  --node-type t3.small
+  --region us-east-1 --fargate
 
 
 eksctl utils associate-iam-oidc-provider \
