@@ -1,7 +1,7 @@
 ## To Create a Load Balancer Serive type....
 
 **<u>Step-1</u>:** Create an EKS Cluster with **eksctl** <br>
---> **eksctl** provisions the entire EKS stack: **VPC, subnets, security groups, IAM roles, EC2 worker nodes and control plane. <br>
+--> **eksctl** provisions the entire EKS stack: **VPC, subnets, security groups, IAM roles, EC2 worker nodes and control plane**. <br>
 
 **<u>Step-2</u>:** Associate IAM OIDC Provider <br>
 --> EKS uses IAM Roles for service Accounts (IRSA) to securely grant permissions to K8s pods. <br>
