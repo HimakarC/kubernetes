@@ -1,6 +1,3 @@
-
-
-
 # commands to configure IAM OIDC provider 
 
 ```
