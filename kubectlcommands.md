@@ -9,6 +9,7 @@ Ex: kubectl create deployment nginx --image=nginx
 --> kubectl port-forward svc/service_name port:port --address 0.0.0.0 #Exposes the application to public address of EC2 instance <br>
 --> nohup kubectl port-forward svc/himakarservice 8000:8000 --address 0.0.0.0 > portforward.log 2>&1 & #Runs the pod in background without killing the terminal session <br>
 --> kubectl get ingress my-app-ingress #To get the ALB DNS which created by Ingress <br>
+-->kubectl exec -it container_name -- /bin/sh #To Enter into the container <br>
 
 # Status of Components: <br>
 
