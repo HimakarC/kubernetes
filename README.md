@@ -13,3 +13,9 @@ To install **kubectl**: <br>
 To install **eksctl**: <br>
 --> curl --silent --location "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp <br>
 --> sudo mv /tmp/eksctl /usr/local/bin
+
+
+
+
+
+--> This change is from EC2 Instance
