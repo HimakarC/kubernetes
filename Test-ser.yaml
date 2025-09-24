@@ -1,12 +1,13 @@
+#This file is for service2, you need to create an another service file similar to this
+#service2.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: himser
+  name: django-app2-service
 spec:
-  selector:
-    app: himapp
-  ports:
-    - protocol: TCP
-      port: 8000
-      targetPort: 8000
   type: ClusterIP
+  selector:
+    app: django-app2
+  ports:
+  - port: 80
+    targetPort: 8000
