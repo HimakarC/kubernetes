@@ -1,19 +1,26 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: himapp-ingress
+  name: django-ingress
   annotations:
+    alb.ingress.kubernetes.io/target-type: ip
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/target-type: ip
 spec:
   rules:
   - http:
       paths:
-      - path: /
-        pathType: Prefix
+      - path: /app3/*
+        pathType: ImplementationSpecific
         backend:
           service:
-            name: himser
+            name: django-app1-service
             port:
-              number: 8000
+              number: 80
+      - path: /app4/*
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: django-app2-service
+            port:
+              number: 80
