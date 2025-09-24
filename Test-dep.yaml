@@ -1,19 +1,20 @@
+#deloyment2.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: himapp
+  name: django-app2
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: himapp
+      app: django-app2
   template:
     metadata:
       labels:
-        app: himapp
+        app: django-app2
     spec:
       containers:
-      - name: himapp
-        image: himakarc/ok:latest
+      - name: django-app2
+        image: himakarc/ko:latest #Replace this image for another service with another image
         ports:
         - containerPort: 8000
